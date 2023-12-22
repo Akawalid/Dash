@@ -1,0 +1,16 @@
+.byebye {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    /* background: linear-gradient(to bottom,#E0F4FF,#fff); */
+  }
+  .picture-end{
+    width: 300px;
+    height: auto;;
+  }
+  .text{
+    font-size: 50px;
+    max-width: 500px;
+  }

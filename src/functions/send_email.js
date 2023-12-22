@@ -1,6 +1,6 @@
 
 import emailjs, { send } from '@emailjs/browser';
-export default sendEmail = (list_of_users, subject, message) => {
+const sendEmail = (list_of_users, subject, message) => {
     const list_of_objects = list_of_users.map(e => { return {
         to_name: e.name,
         to_email: e.email, 
@@ -20,6 +20,7 @@ export default sendEmail = (list_of_users, subject, message) => {
         })
 };
 
+export default sendEmail
 // sendEmail([{
 //     name:"CHABANE", 
 //     last_name:"Oualid", 

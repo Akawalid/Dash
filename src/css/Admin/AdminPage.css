@@ -1,0 +1,46 @@
+
+@font-face {
+  font-family: 'RobotoSerif';
+  src: url('../../../public/fonts/RobotoSerif_Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'RobotoC';
+  src: url('../../../public/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+}
+
+.dash-picture{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+.contact-button{
+  position: absolute;
+  top: 42%;
+  left: 30%;
+  width: 25%;
+  height: 9%;
+  border :none;
+  border-radius: 4px;
+  background-color: #0092D3;
+  color:white;
+  font-size: 1.5em;
+  font-family:RobotoC,sans-serif;
+  transition: width 0.3s ease;
+
+}
+.contact-button:hover{
+  background-color: #2980b9
+}
+
+@media screen and (max-width: 600px) {
+  .contact-button {
+    font-size: 1em; /* Adjust the font size for smaller screens */
+    width: 50%;
+    left: 25%;
+  }
+  .dash-picture{
+    width:70vw;
+  }
+}
+

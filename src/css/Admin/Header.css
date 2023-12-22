@@ -1,0 +1,32 @@
+
+@font-face {
+  font-family: 'RobotoC';
+  src: url('../../../public/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+}
+.flutter-logo{
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  max-width: 100px; 
+}
+
+.event-name {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  font-size: 2.5em;
+  font-family:RobotoSerif;
+  color : #0092D3;
+  border: 0.5;
+  border-color: #54C5F8;
+}
+
+
+@media screen and (max-width: 600px) {
+  .event-name {
+    font-size: 1.9em; /* Adjust the font size for smaller screens */
+  }
+  .flutter-logo{
+    width: 80px;
+  }
+}
