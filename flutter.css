@@ -1,0 +1,242 @@
+*,
+*::after *::before {
+  background-origin: padding-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgb(224, 244, 255, 1);
+}
+
+.page {
+  background: linear-gradient(
+    180deg,
+    rgb(224, 244, 255) 0%,
+    rgb(224, 244, 255) 4.69%,
+    rgb(224, 244, 255) 58.85%,
+    rgb(224, 244, 255) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+
+  color: #333;
+  padding: 0;
+  gap: 30px;
+}
+
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/*.clmn1 {
+  flex: 0 0 60%;
+  text-align: center;
+}
+.clmn2 {
+  flex: 0 0 40%;
+  text-align: center;
+}
+.titleF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #0092d3;
+}
+.titleF.logo {
+  margin-right: 10px;
+  color: #0092d3;
+}*/
+.Flutter {
+  color: #0092d3;
+  font-size: 24px;
+  font-weight: bold;
+}
+/*.header {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.dash h1 {
+  color: #0092d3;
+  font-size: 45px;
+  font-family: "Roboto Serif-Bold", Helvetica;
+  font-weight: 700;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  line-height: normal;
+  letter-spacing: 0;
+}
+.text {
+  width: 705;
+  margin-top: 10px;
+  color: #575454;
+  font-size: 20px;
+  font-family: "Roboto Flex-Medium", Helvetica;
+  font-weight: 500;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.more {
+  text-align: center;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #7e97b8;
+  background-color: #e0e8ef;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 40px 40px 40px 40px;
+  padding: 16px 24px 16px 28px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+button:hover {
+  color: #516d91;
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+/*.flutterimg {
+  max-width: 100%;
+  height: auto;
+}*/
+/*@media (min-width: 200px) {
+  .flutterimg {
+    max-width: 50%;
+  }
+}*/
+
+.infos {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: auto;
+}
+
+.btn1 {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: auto;
+  cursor: pointer;
+}
+
+.columns2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.clmn1,
+.clmn2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+  align-items: center;
+  text-align: center;
+}
+.coolinput {
+  margin-bottom: 20px;
+}
+.flutterimg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sbmt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.rectangle1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 200px;
+}
+.rectangle4 {
+  background-color: #ffffff;
+}
+.by {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 200px;
+}
+.txtby {
+  text-align: center;
+  font-family: "Roboto Condensed-Bold", helvetica;
+  font-size: 50px;
+  color: #575454;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+@media (min-width: 640px) {
+  .container {
+    padding: 0 0.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
