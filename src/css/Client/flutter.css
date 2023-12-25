@@ -1,0 +1,286 @@
+@font-face {
+  font-family: 'RobotoC';
+  src: url('../../../public/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+}
+
+
+*,
+*::after *::before {
+  background-origin: padding-box;
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+p, label{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: RobotoC,sans-serif;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgb(224, 244, 255, 1);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+
+  color: #333;
+  padding: 0;
+  gap: 0px;
+}
+
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+ }
+
+.rec1{
+  background: linear-gradient(to bottom,#E0F4FF,#fff);;
+}
+.rec2{
+  background: linear-gradient(to top,#E0F4FF,#fff);;
+
+}
+.rec3{
+  background: linear-gradient(
+    to bottom,         /* gradient from bottom to top */
+    #E0F4FF 0%,     /* color stop at the bottom with full height */
+    #fff 140px,   /* color stop at the top with a maximum height of 20px */
+    #fff 100%    /* color stop at the top with the smaller bottom */
+  );
+}
+.timing{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 20px;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.img1{
+  width :50px;
+  height: auto;
+}
+.item{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.input{
+  width: 266px;
+  height: 56px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 0.7px solid #00000050;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  font-family: RobotoC,sans-serif;
+  font-size: 20px;
+  text-indent: 10px;
+}
+/*.clmn1 {
+  flex: 0 0 60%;
+  text-align: center;
+}
+.clmn2 {
+  flex: 0 0 40%;
+  text-align: center;
+}
+.titleF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #0092d3;
+}
+.titleF.logo {
+  margin-right: 10px;
+  color: #0092d3;
+}*/
+.Flutter {
+  color: #0092d3;
+  font-size: 24px;
+  font-weight: bold;
+}
+/*.header {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.dash h1 {
+  color: #0092d3;
+  font-size: 45px;
+  font-family: "Roboto Serif-Bold", Helvetica;
+  font-weight: 700;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  line-height: normal;
+  letter-spacing: 0;
+}
+.text {
+  width: 100%;
+  max-width: 600px;;
+  margin-top: 10px;
+  color: #575454;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.more {
+  text-align: center;
+}
+
+button:hover {
+  color: #516d91;
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+/*.flutterimg {
+  max-width: 100%;
+  height: auto;
+}*/
+/*@media (min-width: 200px) {
+  .flutterimg {
+    max-width: 50%;
+  }
+}*/
+
+.infos {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: auto;
+}
+
+
+
+.btn1 {
+  width: 223px; 
+  height: 53px;
+  margin-top: 20px;;
+  background-color: #0092D3;
+  color: white;
+  font-family:RobotoC,sans-serif;;
+}
+
+.columns2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 40px;
+  margin-top: 150px;
+}
+.clmn1,
+.clmn2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+  align-items: center;
+  text-align: center;
+}
+.coolinput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.flutterimg{
+  display: relative;
+}
+
+.flutterimg img{
+  position: absolute;
+  top: 700px;
+  left: 543px;
+  z-index: 2;
+}
+
+.sbmt {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+}
+.rectangle1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 200px;
+}
+.rectangle4 {
+  background-color: #ffffff;
+}
+.by {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 200px;
+}
+.txtby {
+  text-align: center;
+  font-size: 50px;
+  color: #575454;
+  margin-top: 50px;
+  margin-right: 50px;
+  max-width: 400px;;
+}
+@media (min-width: 640px) {
+  .container {
+    padding: 0 0.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}

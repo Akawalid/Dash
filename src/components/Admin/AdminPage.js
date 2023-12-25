@@ -6,8 +6,9 @@ import sendEmail from '../../functions/send_email'
 
 function AdminPage(){
   const handleClick = async () => {
-    const li = await axios.get(process.env.API_URL + '/send_emails')
-    sendEmail(li, 'sent from rouji', 'guess what baby, your application has been accepted for the Flutter\'s thing.')
+    const li = await axios.get('http://localhost:5000/api' + '/send_emails')
+    console.log(li)
+    sendEmail(li.data.users, 'sent from rouji', 'guess what baby, your application has been accepted for the Flutter\'s thing.')
   }
   return(
   <div className="admin-page">

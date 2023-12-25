@@ -2,6 +2,7 @@ const express = require('express');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 const participants = require('./model/participants.js')
+const cors = require('cors')
 mongoose.connect('mongodb+srv://TEAM12:'+'GDGTEAM12'+'@cluster0.fyemcog.mongodb.net/');
 
 const app = express();
@@ -9,20 +10,21 @@ const app = express();
 app.use(bodyparser.urlencoded({extended: false}));
 app.use(bodyparser.json());
 //Cors header editing
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');    
-    if(res.mathod === "OPTIONS") {
-        res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, GET');
-        return res.status(200).json({});
-    }
-    next();
-})
+// app.use((req, res, next) => {
+//     res.header('Access-Control-Allow-Origin', '*');
+//     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');    
+//     if(res.mathod === "OPTIONS") {
+//         res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, GET');
+//         return res.status(200).json({});
+//     }
+//     next();
+// })
+app.use(cors())
 
 app.get("/api/send_emails", (req, res, next) => {
     participants.find()
     .then(users_list => {
-        return res.status(401).json({
+        return res.status(200).json({
             users:users_list
         })
     })
@@ -51,9 +53,9 @@ app.post('/api/registrations', (req, res, next) => {
                     name: req.body.name, 
                     last_name:req.body.last_name,
                     email: req.body.email,
-                    telephone: null,
-                    company_name: null,
-                    level: null
+                    telephone: req.body.telephone,
+                    company_name: req.body.company_name,
+                    level: req.body.level
                 })
                 return toInsert.save();
             }
